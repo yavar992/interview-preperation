@@ -39,5 +39,15 @@ public class Maps {
         //how to remove the elements while iterating to the array , set , hashmap
         //how load factors work in the hashmap
 
+        List<String> courses = List.of("Spring", "Spring Boot", "API" , "Microservices","AWS", "PCF","Azure", "Docker", "Kubernetes");
+        courses.stream().sorted().forEach(System.out::println);
+        List<Integer> numbers
+                = Arrays.asList(11, 22, 33, 44,
+                55, 66, 77, 88,
+                99, 100);
+//        numbers.stream().forEach(number->System.out.print(number + " "));
+        Integer answer = numbers.stream().filter(d->d%2==0).mapToInt(e->e*2).sum();
+        System.out.println(answer);
+
     }
 }
