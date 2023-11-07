@@ -20,7 +20,7 @@ public class StreamApiQuestion {
         System.out.println(resultStrings);
         //CONVERT ALL THE ELEMENTS OF THE LIST IN UPPARCASE AND RETURN THE LIST IN THEIR REVERSED ORDER
         List<String> list = Arrays.asList("hello", "MY","name","IS","yavar" ,"ALI","khan");
-        List<String>upparCaseList = list.stream().map(str->str.toUpperCase()).sorted(Comparator.comparingInt(String::length).reversed()).collect(Collectors.toList());
+        List<String>upparCaseList = list.stream().map(String::toUpperCase).sorted(Comparator.comparingInt(String::length).reversed()).collect(Collectors.toList());
         System.out.println(upparCaseList);
         //Given a list of strings, find and print the first string that has more than five characters using the Stream API.
         List<String> question = Arrays.asList("ENGINEER","hello", "MY","name","IS","yavar" ,"ALI","khan","ENGINEERING","computer","Science");
@@ -36,7 +36,7 @@ public class StreamApiQuestion {
         System.out.println(answer6);
         //Given a list of names, create a program that generates a comma-separated string of names using the Stream API.
         List<String> question7 = Arrays.asList("ENGINEER","hello", "MY","name","IS","yavar" ,"ALI","khan","ENGINEERING","computer","Science");
-        String answer8 = question7.stream().collect(Collectors.joining(","));
+        String answer8 = String.join(",", question7);
         System.out.println(answer8);
         List<String> answer_8 = question7.stream().map(a->a.replaceAll(",","")).collect(Collectors.toList());
         System.out.println(answer_8);

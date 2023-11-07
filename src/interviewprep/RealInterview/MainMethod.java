@@ -7,7 +7,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class MainMethod{
+public class MainMethod implements InterfaceA , InterfaceTwo{
     public static void main(String[] args) {
         ArrayList<Student> students = new ArrayList<>();
         students.add(new Student(1,"yavar","yavarkhan892300@gmail.com","pass1",5000));
@@ -41,5 +41,10 @@ public class MainMethod{
         List<Integer> list = Arrays.asList(3,4,23,4,2,42,4,2,3);
         List<Integer> resultString  = list.stream().filter(a-> a>10).skip(0).limit(2).collect(Collectors.toList());
         System.out.println(resultString);
+    }
+
+    @Override
+    public void doSomething() {
+
     }
 }

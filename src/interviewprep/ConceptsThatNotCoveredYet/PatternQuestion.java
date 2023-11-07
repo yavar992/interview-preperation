@@ -63,7 +63,7 @@ public class PatternQuestion {
 
     static void pattern2(int n) {
         for (int i = 1; i <= n; i++) {
-            for (int j = 0; j <= i; j++) {
+            for (int j = 1; j <= i; j++) {
                 System.out.print("* ");
             }
             System.out.println();
@@ -111,7 +111,7 @@ public class PatternQuestion {
             }
 
             for (int cols = 1; cols <=row; cols++) {
-                System.out.print("*");
+                System.out.print(cols);
             }
             System.out.println();
         }
@@ -136,7 +136,8 @@ public class PatternQuestion {
             for (int j = 1; j <=m ; j++) {
                 if (i==1 || i==n || j==1 || j==m){
                     System.out.print("*");
-                }else System.out.print(" ");
+                }
+                else System.out.print(" ");
             }
             System.out.println();
         }
@@ -595,6 +596,7 @@ public class PatternQuestion {
             }
             System.out.println();
         }
+
 
     }
 }

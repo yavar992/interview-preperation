@@ -8,7 +8,7 @@ public class TODOQUESTIONANSWER {
     // * Write a program to find the factorial of a number.
 
     public static Integer factorialOfNumber(Integer no) {
-        Integer factorialNo = 1;
+        int factorialNo = 1;
         for (Integer i = no; i > 0; i--) {
             factorialNo = factorialNo * i;
         }
@@ -17,13 +17,12 @@ public class TODOQUESTIONANSWER {
 
     // Implement a function to check if a string is a palindrome.
     public static Boolean palindromeString(String word) {
-        String originalWord = word;
-        String reversedWord = "";
+        StringBuilder reversedWord = new StringBuilder();
         for (int i = word.length() - 1; i >= 0; i--) {
-            reversedWord = reversedWord + word.charAt(i);
+            reversedWord.append(word.charAt(i));
         }
         System.out.println(" reversed String or word -> " + reversedWord);
-        return (reversedWord == originalWord) ? true : false;
+        return reversedWord.toString().equals(word);
     }
 
     public static boolean isPalindrome(String name) {
@@ -41,15 +40,15 @@ public class TODOQUESTIONANSWER {
 
     // Implement a function to reverse a string.
     public static String reverseString(String name) {
-        String reversedString = "";
+        StringBuilder reversedString = new StringBuilder();
         for (int i = name.length() - 1; i >= 0; i--) {
-            reversedString = reversedString + name.charAt(i);
+            reversedString.append(name.charAt(i));
         }
-        return reversedString;
+        return reversedString.toString();
     }
 
     // Write a program to find the largest element in an array.
-    public static Integer largetElement(Integer[] array) {
+    public static Integer largestElement(Integer[] array) {
         Integer largestNo = 0;
         for (int i = 0; i < array.length; i++) {
             if (array[i] > largestNo) {
@@ -74,7 +73,7 @@ public class TODOQUESTIONANSWER {
             }
             count++;
         }
-        return (temp == 1) ? true : false;
+        return temp == 1;
     }
 
     // Write a program to sort an array in ascending order.
@@ -202,7 +201,7 @@ public class TODOQUESTIONANSWER {
         System.out.println(reversedString);
         // Write a program to find the largest element in an array.
         Integer[] array = { 3, 4323, 423, 3, 23, 87, 31, 3123, 1, 312 };
-        Integer largesInteger = largetElement(array);
+        Integer largesInteger = largestElement(array);
         System.out.println(largesInteger);
         // Implement a function to check if a number is prime.
         boolean primeNumber = isPrime(3);

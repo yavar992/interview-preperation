@@ -9,7 +9,7 @@ import java.util.stream.Stream;
 
 public class AllInterviewQuestion {
     public static void main(String[] args) {
-        //) Print out duplicates character from your name?
+        //) Print out duplicates character from your name ?
         String name = "Yavar";
         char[] names = name.toCharArray();
         for (int i = 0; i < names.length; i++) {
@@ -29,7 +29,7 @@ public class AllInterviewQuestion {
         System.out.println(b);
         //8) print out 2nd highest number from a list
         List<Integer> list = Arrays.asList(5,8,3,8,64,23);
-        Integer result = list.stream().distinct().sorted(Comparator.reverseOrder()).skip(1).findFirst().get();
-        System.out.println(result);
+        int secondLargestNum = list.stream().sorted(Comparator.reverseOrder()).distinct().findFirst().get();
+        System.out.println(secondLargestNum);
     }
 }

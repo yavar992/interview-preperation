@@ -64,5 +64,44 @@ public class ConcurentHashmap extends Object {
                 set
         );
 
+        Boolean ans = anagramString("alphabat");
+        System.out.println(ans);
+        int answer = nbYear(1000 ,2.0 ,50 ,1200 );
+        int answer2 = noOfYear(1000 ,2.0 ,50 ,1200 );
+        System.out.println(answer2);
+        System.out.println(answer);
     }
+
+    public static boolean anagramString(String sentence){
+        char[] ch = sentence.toCharArray();
+        for (int i = 0; i <ch.length ; i++) {
+            for (int j = 0; j <ch.length ; j++) {
+                if (i!=j && ch[j]==ch[i]){
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
+    public static int nbYear(int p0, double percent, int aug, int p){
+        percent = percent/100;
+        double firstYear = p0*percent + aug;
+        int count = 0;
+        for (double i = p0; i<=p;  i+=firstYear) {
+            count++;
+        }
+        return count;
+    }
+
+    public static int noOfYear(int p0, double percent, int aug, int p) {
+        int years = 0;
+        while (p0 < p) {
+            p0 += p0 * percent / 100 + aug;
+            years++;
+        }
+        return years;
+    }
+
+    
 }

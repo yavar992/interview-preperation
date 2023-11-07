@@ -76,7 +76,7 @@ Implement a function to find the maximum path sum in a binary tree.
 Write a program to check if a number is a happy number.
 Implement a function to find the number of occurrences of each element in an array.
 Write a program to check if a string is a valid palindrome permutation.
-Implement a function to find the maximum subarray product in an array.
+Implement a function to find the maximum subArray product in an array.
 Write a program to find the number of prime numbers in a given range.
 Implement a function to find the least common ancestor of two nodes in a binary tree.
 Write a program to check if a number is a power of three.
@@ -187,9 +187,12 @@ Write a program to check if a number is a power of ten using logarithmic time co
 Implement a function to check if a string is a valid parentheses sequence using a stack, counter, and optimized space complexity.
 Write a program to find the maximum sum of a subarray with at most k distinct elements using a hashmap, sliding window approach, and optimized space complexity.
 Implement a function to check if a string is a valid palindrome with the option to ignore non-alphanumeric characters, case, whitespace, leading/trailing spaces, punctuation marks, special characters, and control characters.
+Serializable and the Callable interface in the java
+Singleton design pattern in java and how to break it
      */
     public static void main(String[] args) {
      int a = 5;
      System.out.println(++a + "5");
     }
+
 }

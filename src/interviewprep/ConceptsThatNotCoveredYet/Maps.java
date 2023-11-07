@@ -4,6 +4,10 @@ import java.util.*;
 
 public class Maps {
 
+    public Maps(){
+
+    }
+
     public static <T> ArrayList<T> hello(T...t){
         return new ArrayList<>(List.of(t));
     }

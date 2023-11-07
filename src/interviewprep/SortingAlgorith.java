@@ -1,6 +1,9 @@
 package interviewprep;
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
 
 public class SortingAlgorith {
 
@@ -44,5 +47,12 @@ public class SortingAlgorith {
         int[] selectionSort = {43,3,4,2,3,234,23,3};
         selectionSort(selectionSort);
         System.out.println(Arrays.toString(selectionSort));
+
+        //remove duplicate element from an array
+        int[] array = {5,6,233,54,6,2,6,2,5,68,8,44};
+        Set<?> hashSet = new HashSet<>(Arrays.asList(array));
+        Integer[] integers = hashSet.toArray(new Integer[0]);
+        System.out.println(Arrays.toString(integers));
+
     }
 }
