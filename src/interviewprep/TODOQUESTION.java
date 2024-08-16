@@ -175,7 +175,7 @@ Write a program to check if a number is a power of ten using logarithmic time co
 Implement a function to check if a string is a valid parentheses sequence using a stack and counter with optimized space complexity.
 Write a program to find the maximum sum of a subarray with at most k distinct elements using a hashmap and sliding window approach.
 Implement a function to check if a string is a valid palindrome with the option to ignore non-alphanumeric characters, case, whitespace, leading/trailing spaces, and punctuation marks using recursion.
-Write a program to find the longest palindromic substring in a string using Manacher's algorithm with linear time complexity.
+Write a program to find the longest palindromic substring in a string using Manchester's algorithm with linear time complexity.
 Implement a function to calculate the number of distinct ways to reach a target sum using dynamic programming and bottom-up approach.
 Write a program to check if a number is a power of five using logarithmic time complexity and bitwise operations.
 Implement a function to check if a string is a valid parentheses sequence using recursion and counter with optimized space complexity.
@@ -185,7 +185,7 @@ Write a program to find the longest common prefix among a set of strings using a
 Implement a function to calculate the number of distinct ways to reach a target sum using a combination of coins, memoization, and optimized space complexity.
 Write a program to check if a number is a power of ten using logarithmic time complexity, bitwise operations, and optimized space complexity.
 Implement a function to check if a string is a valid parentheses sequence using a stack, counter, and optimized space complexity.
-Write a program to find the maximum sum of a subarray with at most k distinct elements using a hashmap, sliding window approach, and optimized space complexity.
+Write a program to find the maximum sum of a sub-array with at most k distinct elements using a hashmap, sliding window approach, and optimized space complexity.
 Implement a function to check if a string is a valid palindrome with the option to ignore non-alphanumeric characters, case, whitespace, leading/trailing spaces, punctuation marks, special characters, and control characters.
 Serializable and the Callable interface in the java
 Singleton design pattern in java and how to break it

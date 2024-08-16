@@ -1,11 +1,11 @@
 package interviewprep.ConceptsThatNotCoveredYet;
 
 public interface Cooks {
-    public void makeFood();
+    // public void makeFood();
 
 
-    public static String hello(){
-        return "";
+    default void hello(){
+        System.out.println("in default method  ");
     }
-
 }
+

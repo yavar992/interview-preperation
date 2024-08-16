@@ -53,5 +53,10 @@ public class Maps {
         Integer answer = numbers.stream().filter(d->d%2==0).mapToInt(e->e*2).sum();
         System.out.println(answer);
 
+        LinkedList<Integer> linkedList = new LinkedList<>();
+        linkedList.add(3);
+        linkedList.add(5);
+        
+
     }
 }
